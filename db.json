@@ -1,0 +1,99 @@
+{
+  "products": [{
+      "id": 9780596806750,
+      "title": "JavaScript Patterns: Build Better Applications with Coding and Design Patterns",
+      "author": {
+        "name": "Stefanov",
+        "firstname": "Stoyan"
+      },
+      "publisher": "O'Reilly Media",
+      "year": 2010,
+      "price": 29.99,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51%2BSiphz7AL._SL200_.jpg"
+    }, {
+      "id": 9780596517748,
+      "title": "JavaScript: The Good Parts",
+      "author": {
+        "name": "Crockford",
+        "firstname": "Douglas"
+      },
+      "publisher": "O'Reilly Media",
+      "year": 2008,
+      "price": 29.99,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/5131OWtQRaL._SL200_.jpg"
+    },
+    {
+      "id": 9781449331818,
+      "title": "Learning JavaScript Design Patterns",
+      "author": {
+        "name": "Osmani",
+        "firstname": "Addy"
+      },
+      "publisher": "O'Reilly Media",
+      "year": 2012,
+      "price": 44.99,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51jEMnP6UGL._SL200_.jpg"
+    },
+    {
+      "id": 9781593279509,
+      "title": "Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming",
+      "author": {
+        "name": "Haverbeke",
+        "firstname": "Marijn"
+      },
+      "publisher": "No Starch Press",
+      "year": 2018,
+      "price": 39.95,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51I9naPg55L._SL200_.jpg"
+    },
+    {
+      "id": 9781617292859,
+      "title": "Secrets of the JavaScript Ninja, Second Edition",
+      "author": {
+        "name": "Resig",
+        "firstname": "John"
+      },
+      "publisher": "Manning Publications",
+      "year": 2016,
+      "price": 44.99,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51sxvZlbH5L._SL200_.jpg"
+    },
+    {
+      "id": 9780132350884,
+      "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "author": {
+        "name": "Martin",
+        "firstname": "Robert C."
+      },
+      "publisher": "Prentice Hall",
+      "year": 2008,
+      "price": 34.47,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41TINACY3hL._SL200_.jpg"
+    },
+    {
+      "id": 9780132350884,
+      "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+      "author": [{
+          "name": "Gamma",
+          "firstname": "Erich "
+        },
+        {
+          "name": "Helm",
+          "firstname": "Richard "
+        },
+        {
+          "name": "Johnson",
+          "firstname": "Ralph "
+        },
+        {
+          "name": "Vlissides",
+          "firstname": "John"
+        }
+      ],
+      "publisher": "Prentice Hall",
+      "year": 2008,
+      "price": 34.47,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51szD9HC9pL._SL200_.jpg"
+    }
+  ]
+}
