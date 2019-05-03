@@ -4,7 +4,7 @@
       "title": "JavaScript Patterns: Build Better Applications with Coding and Design Patterns",
       "author": {
         "name": "Stefanov",
-        "firstname": "Stoyan"
+        "firstName": "Stoyan"
       },
       "publisher": "O'Reilly Media",
       "year": 2010,
@@ -15,7 +15,7 @@
       "title": "JavaScript: The Good Parts",
       "author": {
         "name": "Crockford",
-        "firstname": "Douglas"
+        "firstName": "Douglas"
       },
       "publisher": "O'Reilly Media",
       "year": 2008,
@@ -27,7 +27,7 @@
       "title": "Learning JavaScript Design Patterns",
       "author": {
         "name": "Osmani",
-        "firstname": "Addy"
+        "firstName": "Addy"
       },
       "publisher": "O'Reilly Media",
       "year": 2012,
@@ -39,7 +39,7 @@
       "title": "Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming",
       "author": {
         "name": "Haverbeke",
-        "firstname": "Marijn"
+        "firstName": "Marijn"
       },
       "publisher": "No Starch Press",
       "year": 2018,
@@ -51,7 +51,7 @@
       "title": "Secrets of the JavaScript Ninja, Second Edition",
       "author": {
         "name": "Resig",
-        "firstname": "John"
+        "firstName": "John"
       },
       "publisher": "Manning Publications",
       "year": 2016,
@@ -63,7 +63,7 @@
       "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
       "author": {
         "name": "Martin",
-        "firstname": "Robert C."
+        "firstName": "Robert C."
       },
       "publisher": "Prentice Hall",
       "year": 2008,
@@ -71,23 +71,23 @@
       "image": "https://images-na.ssl-images-amazon.com/images/I/41TINACY3hL._SL200_.jpg"
     },
     {
-      "id": 9780132350884,
+      "id": 9780201633610,
       "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
       "author": [{
           "name": "Gamma",
-          "firstname": "Erich "
+          "firstName": "Erich "
         },
         {
           "name": "Helm",
-          "firstname": "Richard "
+          "firstName": "Richard "
         },
         {
           "name": "Johnson",
-          "firstname": "Ralph "
+          "firstName": "Ralph "
         },
         {
           "name": "Vlissides",
-          "firstname": "John"
+          "firstName": "John"
         }
       ],
       "publisher": "Prentice Hall",
