@@ -30,18 +30,14 @@
 </template>
 
 <script>
-import productService from "../../services/productService";
 export default {
-  data() {
-    return {
-      products: []
-    };
-  },
   created() {
-    productService.getProducts().then(res => {
-      // console.log(res);
-      this.products = res.data;
-    });
+    this.$store.dispatch("getProducts");
+  },
+  computed: {
+    products() {
+      return this.$store.state.products;
+    }
   }
 };
 </script>
