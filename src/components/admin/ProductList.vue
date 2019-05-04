@@ -17,7 +17,7 @@
         <tr v-for="product in products" :key="product.id">
           <th scope="row">{{ product.id }}</th>
           <td>{{ product.title }}</td>
-          <td>{{ product.author.firstName }} {{ product.author.name }}</td>
+          <td>{{ product.author.firstName }} {{ product.author.lastName }}</td>
           <td>{{ product.publisher }}</td>
           <td>{{ product.year }}</td>
           <td>{{ product.image }}</td>

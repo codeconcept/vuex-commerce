@@ -1,20 +1,22 @@
 {
-  "products": [{
+  "products": [
+    {
       "id": 9780596806750,
       "title": "JavaScript Patterns: Build Better Applications with Coding and Design Patterns",
       "author": {
-        "name": "Stefanov",
+        "lastName": "Stefanov",
         "firstName": "Stoyan"
       },
       "publisher": "O'Reilly Media",
       "year": 2010,
       "price": 29.99,
       "image": "https://images-na.ssl-images-amazon.com/images/I/51%2BSiphz7AL._SL200_.jpg"
-    }, {
+    },
+    {
       "id": 9780596517748,
       "title": "JavaScript: The Good Parts",
       "author": {
-        "name": "Crockford",
+        "lastName": "Crockford",
         "firstName": "Douglas"
       },
       "publisher": "O'Reilly Media",
@@ -26,7 +28,7 @@
       "id": 9781449331818,
       "title": "Learning JavaScript Design Patterns",
       "author": {
-        "name": "Osmani",
+        "lastName": "Osmani",
         "firstName": "Addy"
       },
       "publisher": "O'Reilly Media",
@@ -38,7 +40,7 @@
       "id": 9781593279509,
       "title": "Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming",
       "author": {
-        "name": "Haverbeke",
+        "lastName": "Haverbeke",
         "firstName": "Marijn"
       },
       "publisher": "No Starch Press",
@@ -50,7 +52,7 @@
       "id": 9781617292859,
       "title": "Secrets of the JavaScript Ninja, Second Edition",
       "author": {
-        "name": "Resig",
+        "lastName": "Resig",
         "firstName": "John"
       },
       "publisher": "Manning Publications",
@@ -62,7 +64,7 @@
       "id": 9780132350884,
       "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
       "author": {
-        "name": "Martin",
+        "lastName": "Martin",
         "firstName": "Robert C."
       },
       "publisher": "Prentice Hall",
@@ -73,20 +75,21 @@
     {
       "id": 9780201633610,
       "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
-      "author": [{
-          "name": "Gamma",
+      "author": [
+        {
+          "lastName": "Gamma",
           "firstName": "Erich "
         },
         {
-          "name": "Helm",
+          "lastName": "Helm",
           "firstName": "Richard "
         },
         {
-          "name": "Johnson",
+          "lastName": "Johnson",
           "firstName": "Ralph "
         },
         {
-          "name": "Vlissides",
+          "lastName": "Vlissides",
           "firstName": "John"
         }
       ],
