@@ -52,5 +52,10 @@ export default new Vuex.Store({
         })
         .catch(err => console.error(err));
     }
+  },
+  getters: {
+    getCart(state) {
+      return state.cart;
+    }
   }
 });
