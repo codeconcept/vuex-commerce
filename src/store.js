@@ -7,7 +7,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     products: [],
-    errors: []
+    errors: [],
+    cart: []
   },
   mutations: {
     GET_PRODUCTS(state, products) {
@@ -18,6 +19,9 @@ export default new Vuex.Store({
     },
     CREATE_ERROR(state, error) {
       state.errors = [error, ...state.errors];
+    },
+    ADD_TO_CART(state, product) {
+      state.cart = [product, ...state.cart];
     }
   },
   actions: {
@@ -39,6 +43,14 @@ export default new Vuex.Store({
       productService.createProduct(product).then(() => {
         commit("CREATE_PRODUCT", product);
       });
+    },
+    addToCart({ commit }, product) {
+      return productService
+        .addToCart(product)
+        .then(() => {
+          commit("ADD_TO_CART", product);
+        })
+        .catch(err => console.error(err));
     }
   }
 });

@@ -7,6 +7,9 @@ export default {
     return axios.get(`${baseUrl}/products`);
   },
   createProduct(book) {
-    return axios.post(`${baseUrl}/products`, book)
+    return axios.post(`${baseUrl}/products`, book);
+  },
+  addToCart(product) {
+    return axios.post(`${baseUrl}/cart`, product);
   }
 };
