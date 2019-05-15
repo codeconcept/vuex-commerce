@@ -20,8 +20,8 @@ export default new Vuex.Store({
     CREATE_ERROR(state, error) {
       state.errors = [error, ...state.errors];
     },
-    ADD_TO_CART(state, product) {
-      state.cart = [product, ...state.cart];
+    UPDATE_CART(state, cart) {
+      state.cart = cart;
     }
   },
   actions: {
@@ -44,11 +44,18 @@ export default new Vuex.Store({
         commit("CREATE_PRODUCT", product);
       });
     },
-    addToCart({ commit }, product) {
+    updateCart({ commit }, product) {
       return productService
         .addToCart(product)
         .then(() => {
-          commit("ADD_TO_CART", product);
+          console.log(
+            "cart",
+            JSON.parse(localStorage.getItem("vuex-commerce-cart"))
+          );
+          commit(
+            "UPDATE_CART",
+            JSON.parse(localStorage.getItem("vuex-commerce-cart"))
+          );
         })
         .catch(err => console.error(err));
     }
