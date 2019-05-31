@@ -11,7 +11,6 @@ export default {
   },
   addToCart(product) {
     return new Promise(resolve => {
-      debugger;
       let cartInLocalstorage = localStorage.getItem("vuex-commerce-cart");
       let cart = {};
       if (!cartInLocalstorage) {
@@ -25,11 +24,12 @@ export default {
         // is same product already in cart?
         const index = products.findIndex(p => p.id === product.id);
         if (index === -1) {
+          product.quantity = 1;
           cart = { products: [product, ...products] };
         } else {
           products[index].quantity += 1;
           cart = {
-            products: [product, ...cart.products]
+            products: [...products]
           };
         }
         localStorage.setItem("vuex-commerce-cart", JSON.stringify(cart));
