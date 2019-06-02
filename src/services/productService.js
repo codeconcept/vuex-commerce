@@ -25,7 +25,7 @@ export default {
         const index = products.findIndex(p => p.id === product.id);
         if (index === -1) {
           product.quantity = 1;
-          cart = { products: [product, ...products] };
+          cart = { products: [...products, product] };
         } else {
           products[index].quantity += 1;
           cart = {
