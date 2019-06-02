@@ -36,5 +36,24 @@ export default {
         resolve(cart);
       }
     });
+  },
+  removeOneFromCart(product) {
+    return new Promise(resolve => {
+      const products = JSON.parse(localStorage.getItem("vuex-commerce-cart"))
+        .products;
+      const index = products.findIndex(p => p.id === product.id);
+      products[index].quantity -= 1;
+
+      // remove this product from cart if it's new quantity is zero
+      if (products[index].quantity === 0) {
+        products.splice(index, 1);
+      }
+
+      const cart = {
+        products: [...products]
+      };
+      localStorage.setItem("vuex-commerce-cart", JSON.stringify(cart));
+      resolve(cart);
+    });
   }
 };

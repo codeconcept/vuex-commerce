@@ -22,6 +22,9 @@ export default new Vuex.Store({
     },
     UPDATE_CART(state, cart) {
       state.cart = cart;
+    },
+    REMOVE_ONE_FROM_CART(state, cart) {
+      state.cart = cart;
     }
   },
   actions: {
@@ -58,6 +61,17 @@ export default new Vuex.Store({
           );
         })
         .catch(err => console.error(err));
+    },
+    removeOneFromCart({ commit }, product) {
+      return productService
+        .removeOneFromCart(product)
+        .then(() => {
+          commit(
+            "REMOVE_ONE_FROM_CART",
+            JSON.parse(localStorage.getItem("vuex-commerce-cart"))
+          );
+        })
+        .catch(err => console.error(err));
     }
   },
   getters: {
@@ -67,7 +81,6 @@ export default new Vuex.Store({
     getNumberArticlesInCart(state) {
       if (!state.cart.products) return 0;
       const numberArticles = state.cart.products.reduce((acc, curr) => {
-        console.log({ acc, curr });
         return acc + curr.quantity;
       }, 0);
       return numberArticles;
