@@ -72,6 +72,14 @@ export default new Vuex.Store({
           );
         })
         .catch(err => console.error(err));
+    },
+    getCartFromStorage({ commit }) {
+      const cart = JSON.parse(localStorage.getItem("vuex-commerce-cart"));
+      if (!cart) return;
+      commit(
+        "UPDATE_CART",
+        JSON.parse(localStorage.getItem("vuex-commerce-cart"))
+      );
     }
   },
   getters: {

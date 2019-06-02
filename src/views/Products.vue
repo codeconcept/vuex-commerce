@@ -19,6 +19,7 @@
 export default {
   created() {
     this.$store.dispatch("getProducts");
+    this.$store.dispatch("getCartFromStorage");
   },
   computed: {
     products() {
