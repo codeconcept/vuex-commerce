@@ -11,7 +11,10 @@
         <router-link to="/admin">Admin</router-link>
       </span>
       <span class="float-right">
-        <router-link to="/cart">cart ({{ numberArticleInCart }})</router-link>
+        <router-link to="/cart">
+          <i class="fas fa-shopping-cart"></i>
+          cart ({{ numberArticleInCart }})
+        </router-link>
       </span>
     </div>
     <div class="container-fluid">
