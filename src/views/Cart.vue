@@ -20,6 +20,9 @@
 
 <script>
 export default {
+  created() {
+    this.$store.dispatch("getCartFromStorage");
+  },
   methods: {
     incrementQuantity(product) {
       this.$store.dispatch("updateCart", product);
